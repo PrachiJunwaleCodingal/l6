@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> ACT1- Positioning </title>
+    <style>
+        body {
+            background-color: beige;
+        }
+
+        div {
+            right: 30px;
+            border: 3px solid #2165ad;
+        }
+
+
+        div.relative {
+            position: relative;
+            left: 100px;
+            border: 3px solid #65e69b;
+        }
+
+        div.absolute {
+            position: absolute;
+            left: 50px;
+            border: 3px solid rgb(4, 4, 82);
+        }
+
+        div.fixed {
+            position: fixed;
+            bottom: 0;
+            right: 50px;
+            width: 300px;
+            border: 3px solid #fe4dc3;
+        }
+
+        div.sticky {
+            position: sticky;
+            top: 1px;
+            left: 20px;
+            width: 200px;
+            border: 3px solid #73AD21;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <h2>Positioning in CSS</h2>
+
+    <div>
+        No position property
+    </div>
+
+    <div class="sticky">
+        sticky position property
+    </div>
+
+    <div class="relative">
+        relative position property
+        <div class="absolute">
+            Absolute position property used to position element relative to previous div (relative here)
+        </div>
+    </div>
+
+    <div class="fixed">
+        fixed position property(bottom side)
+    </div>
+
+
+</body>
+
+</html>
